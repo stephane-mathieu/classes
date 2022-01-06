@@ -91,7 +91,7 @@ class userpdo {
 
 
     public function isConnected(){
-        if($this->login == true){
+        if($_SESSION['login']){
             return true;
         }else {
             return false;

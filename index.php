@@ -7,7 +7,7 @@ session_start();
 
 var_dump($_SESSION);
 $connexion_user = new User();
-// $connexion_user = new userpdo();
+$connexion_user = new userpdo();
 print( $_SESSION['login']);
 
 var_dump($connexion_user->isConnected());

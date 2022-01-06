@@ -2,7 +2,7 @@
 session_start();
 
 include('user.php');
-// include('user-pdo.php');
+include('user-pdo.php');
 
 
 
@@ -14,7 +14,7 @@ $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 
 $User = new USer();
-// $User = new userpdo();
+$User = new userpdo();
 $User->login = $_SESSION['login'];
 
 if(isset($_POST['submit'])) {
