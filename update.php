@@ -2,7 +2,7 @@
 session_start();
 
 include('user.php');
-include('user-pdo.php');
+// include('user-pdo.php');
 
 
 
@@ -13,19 +13,19 @@ $email = $_POST['email'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 
-// $User = new USer();
-$User = new userpdo();
-
+$User = new USer();
+// $User = new userpdo();
+$User->login = $_SESSION['login'];
 
 if(isset($_POST['submit'])) {
     $User->update($login, $password, $email, $firstname, $lastname);
 }
-echo $User->isConnected();
-print_r ($User->getAllInfos());
-print_r ($User->getLogin());
-print_r ($User->getEmail());
-print_r ($User->getFirstname());
-print_r ($User->getLastname());
+var_dump($User->isConnected());
+// print_r ($User->getAllInfos());
+// print_r ($User->getLogin());
+// print_r ($User->getEmail());
+// print_r ($User->getFirstname());
+// print_r ($User->getLastname());
 
 ?>
 

@@ -3,6 +3,7 @@ class User {
     
     private $id;
     public $login;
+    public $password;
     public $email;
     public $firstname;
     public $lastname;
@@ -51,7 +52,7 @@ class User {
 
 
     public function disconnect(){
-       
+
         session_destroy();
     }
 
@@ -74,7 +75,7 @@ class User {
     }
 
     public function isConnected(){
-        if($this->login == true){
+        if(isset($_SESSION['login'])){
             return true;
         }else {
             return false;

@@ -17,19 +17,19 @@
         <form class="row g-3" action="traitement_inscription.php" method="POST">
           <div >
             <label for="validationDefaultUsername" class="form-label">Login</label>
-            <input type="text" class="form-control" name="login" id="validationDefault03" placeholder="écris ton login" required>
+            <input type="text" class="form-control" name="login" id="validationDefault03" placeholder="écris ton login">
           </div>
           <div >
             <label for="validationDefaultUsername" class="form-label">email</label>
-            <input type="text" class="form-control" name="email" id="validationDefault03" placeholder="écris ton login" required>
+            <input type="text" class="form-control" name="email" id="validationDefault03" placeholder="écris ton login">
           </div>
           <div >
             <label for="validationDefaultUsername" class="form-label">firstname</label>
-            <input type="text" class="form-control" name="firstname" id="validationDefault03" placeholder="écris ton login" required>
+            <input type="text" class="form-control" name="firstname" id="validationDefault03" placeholder="écris ton login">
           </div>
           <div >
             <label for="validationDefaultUsername" class="form-label">lastname</label>
-            <input type="text" class="form-control" name="lastname" id="validationDefault03" placeholder="écris ton login" required>
+            <input type="text" class="form-control" name="lastname" id="validationDefault03" placeholder="écris ton login">
           </div>
           <div>
             <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
